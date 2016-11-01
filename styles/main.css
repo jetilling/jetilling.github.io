@@ -1,0 +1,396 @@
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  background: green;
+  text-align: center;
+  z-index: 2
+}
+
+.navbar li {
+  position: relative;
+  display: inline-block;
+  top: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
+  z-index: 2
+}
+
+
+html, body  {
+height: 100%;
+width: 100%
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #999;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.intro-main {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.chair {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .chair {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .chair {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .intro-main {
+    background: url('../img/videoframe.jpg') center center / cover no-repeat;
+  }
+
+  .chair {
+    display: none;
+  }
+}
+
+.intro-title {
+  display: inline-block;
+  position: relative;
+  font-family: 'Lobster', cursive;
+  font-size: 120px;
+  color: white;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-top: 15%;
+  left: 15%;
+  z-index: 1
+}
+
+.intro-subtitle {
+  display: inline-block;
+  position: relative;
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 2px;
+  text-align: center;
+  top: -60px;
+  left: 40%;
+  z-index: 1
+}
+
+.startButton {
+  position: relative;
+  margin-top: 20px;
+  width: 100px;
+  height: 30px;
+  background: #2b8cbe;
+  outline: none;
+  border-radius: 50px;
+  z-index: 1;
+  border: 1.5px solid #0868ac;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+}
+
+.startButton:hover {
+  background: #0868ac;
+  border: 1.5px solid #2b8cbe;
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  /*top: 700px;*/
+  overflow: hidden;
+  display: inline-block;
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: white;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.content img {
+  width: 100%;
+  position: absolute;
+}
+
+.navbar {
+  height: 75px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  background: white;
+  z-index: 2;
+  font-family: 'Lobster', cursive;
+  color: red;
+  font-size: 50px;
+  padding-top: 10px;
+  opacity: .8;
+  box-shadow: 0px 8px 10px #888888;
+}
+
+.navbar a {
+  color: red;
+  text-decoration: none
+}
+
+.sidenav {
+    height: 100%;
+    width: 20px;
+    position: fixed;
+    z-index: 4;
+    top: 75px;
+    left: 0px;
+    background-color: #2B2929;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    overflow: hidden;
+    font-family: 'Lobster', cursive;
+}
+
+.open {
+  display: inline-block;
+  height: 120%;
+  width: 20px;
+  background: #201E1E;
+  position: relative;
+  top: -209px;
+  z-index: 4;
+  transition: 0.5s;
+  border-bottom: 2px solid black
+}
+.close {
+  height: 120%;
+  width: 20px;
+  background: #201E1E;
+  position: relative;
+  top: -140px;
+  z-index: 5;
+  transition: 0.5s;
+  border-bottom: 2px solid black
+}
+
+.text {
+  transform: rotate(-90deg);
+  position: relative;
+  top: 300px;
+  color: #3E3939;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 4px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.rankedKittensBox {
+  height: 10%;
+  width: 200px;
+}
+
+.rankedKittens {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+}
+.rankedKittens img {
+  width: 50px;
+  display: inline-block;
+  margin-left: 30px
+
+}
+
+.notCute {
+  display: inline-block;
+  position: relative;
+  left: 0%;
+  top: 120px;
+  width: 60px;
+  height: 60px;
+  background: gainsboro;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.notCute img {
+  position: relative;
+}
+
+.cuteButton {
+  display: inline-block;
+  position: relative;
+  left: 25%;
+  top: 120px;
+  width: 60px;
+  height: 60px;
+  background: gainsboro;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.cuteButton img {
+  position: relative;
+}
+
+#card {
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+    /*position: relative;*/
+    top: 40px;
+    left: 430px;
+    text-align: center;
+    z-index: 2;
+    display: inline-block;
+}
+#card img {
+    width: 400px;
+    height: 400px;
+    /*position: relative;*/
+    left: 0px;
+    border-radius: 25px;
+}
+#card .back {
+    background: #E87A7A;
+    color: black;
+    text-align: center;
+    /*position: relative;*/
+    left: 0px;
+    border-radius: 25px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.kittenDesc {
+  padding: 20px;
+}
+
+.kittenName {
+  font-size: 30px;
+  padding: 20px;
+}
+
+.back button {
+  margin-top: 20px;
+  border: 2px solid black;
+  background: #E87A7A;
+  font-family: 'Nunito', sans-serif;
+}
+
+.back button:hover {
+  background: #7C6E6E
+}
+
+.kittenCollection {
+  overflow: scroll;
+  height: 100vh;
+  width: 100%;
+
+}
+
+.kitten {
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+  position: relative;
+  top: 50px;
+  display: inline-block;
+  margin: 40px;
+  left: 60px;
+  z-index: 2;
+  overflow: scroll;
+}
+
+.kitten img {
+  width: 300px;
+  height: auto;
+  border-radius: 25px;
+  z-index: 2
+}
+
+.kitten .back {
+  background: #E87A7A;
+  color: black;
+  text-align: center;
+  font-size: 15px;
+  overflow: scroll;
+  border-radius: 25px;
+  z-index: 2;
+  font-family: 'Nunito', sans-serif;
+}
+.savedKittenName {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.savedKittenDesc {
+  padding-top: 10px;
+}
+
+.crop {
+ height: 200px;
+ width: 200px;
+ overflow: hidden;
+}
+.crop img {
+ height: 200px;
+ width: 200px;
+}
+
+.main img {
+  position: relative;
+  z-index: 1;
+  width: 50%;
+  left: 300px;
+  top: 75px;
+}
